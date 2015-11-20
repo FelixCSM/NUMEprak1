@@ -1,4 +1,4 @@
-function L_j = LagrageBasispolynom(j,var,x)
+function L_j = LagrangeBasispolynom(j,var,x)
   double top = 1, double bottom
   for i = 1:size(x)
     if i~=j+1; then
