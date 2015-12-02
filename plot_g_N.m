@@ -5,6 +5,8 @@ function [ A ] = plot_g_N( func, samps, N )
 A=polyfit(samps(N),arrayfun(func,samps(N)),N);
 figure();
 plot(MSamplings(samps,N),polyval(A,MSamplings(samps,N)))
+hold on
+plot(MSamplings(samps,N),arrayfun(func,MSamplings(samps, N)))
 
 
 end
