@@ -1,6 +1,13 @@
-function [ output_args ] = MSamplings( input_args )
-%MSAMPLINGS Summary of this function goes here
-%   Detailed explanation goes here
+function [ M ] = MSamplings( samples , N )
+%MSAMPLINGS implements the 10th-fold decomposition
+%   Explaination is reference to Aufgabe
+
+if samples == @EvenSamplingPoints
+    M=-1:5*N:1;
+end
+if samples == @TscherbySamples
+    
+end
 
 
 end
