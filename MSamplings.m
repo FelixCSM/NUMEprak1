@@ -5,9 +5,9 @@ function [ M ] = MSamplings( samples , N )
 if isequal(samples,@EvenSamplingPoints)
     M=-1:1/(5*N):1;
 end
-%if samples == TscherbySamples
+if isequal(samples, @TscherbySamples)
     
-%end
+end
 
 
 end

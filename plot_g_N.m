@@ -8,6 +8,5 @@ plot(MSamplings(samps,N),polyval(A,MSamplings(samps,N)))
 hold on
 plot(MSamplings(samps,N),arrayfun(func,MSamplings(samps, N)))
 
-
 end
 
