@@ -6,5 +6,5 @@ plot_g_N(@RungeFunction,N)
 
 
 %part(iii)
-%plot_F_N(@f1,N)
-%plot_F_N(@RungeFunction,N)
+plot_F_N(@f1,N)
+plot_F_N(@RungeFunction,N)

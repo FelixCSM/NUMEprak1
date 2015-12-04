@@ -1,7 +1,5 @@
-function [ output_args ] = F_N( input_args )
-%F_N Summary of this function goes here
-%   Detailed explanation goes here
-
-
+function [ F ] = F_N( func, samp, N )
+%F_N returns F_N values
+F = pval(func,samp,N)- arrayfun(func ,MSamplings(samp,N));
 end
 
