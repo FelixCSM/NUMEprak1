@@ -1,6 +1,5 @@
-function [ output_args ] = plot_g_S( fun , N )
-%PLOT_G_S Summary of this function goes here
-%   Detailed explanation goes here
+function [ ] = plot_g_S( fun , N )
+%PLOT_G_S plots the Splines and the error
 figure();
 subplot(2,1,1),normalplot(fun,N);
 hold on
