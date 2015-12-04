@@ -1,6 +1,7 @@
-function [ output_args ] = plot_F_N( input_args )
-%PLOT_F_N Summary of this function goes here
-%   Detailed explanation goes here
+function [ ] = plot_F_N( func, N )
+%PLOT_F_N plots F_N
+figure();
+
 
 
 end
