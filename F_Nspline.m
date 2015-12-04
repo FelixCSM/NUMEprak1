@@ -1,6 +1,5 @@
 function [ err ] = F_Nspline( func, N )
-%F_NSPLINE Summary of this function goes here
-%   Detailed explanation goes here
+%F_Nspline returns the values of error function
 err = arrayfun(func, MSamplings(@EvenSamplingPoints,N)) - interspline(func,N);
 
 end
