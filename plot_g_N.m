@@ -1,12 +1,15 @@
-function [ A ] = plot_g_N( func, samps, N )
+function [  ] = plot_g_N( func, N )
 %PLOT_G_N Implements g_N
 %@param function to plot and amount of sampling points in I
-%@return vector with a_i for the plotted polynomial
-A=polyfit(samps(N),arrayfun(func,samps(N)),N);
+%@
+A=polyfit(EvenSamplingPoints(N),arrayfun(func,EvenSamplingPoints(N)),N);
+B=polyfit(TscherbySamples(N),arrayfun(func,TscherbySamples(N)),N);
 figure();
-plot(MSamplings(samps,N),polyval(A,MSamplings(samps,N)))
+plot(MSamplings(@EvenSamplingPoints,N),polyval(A,MSamplings(@EvenSamplingPoints,N)))
 hold on
-plot(MSamplings(samps,N),arrayfun(func,MSamplings(samps, N)))
+plot(MSamplings(@TscherbySamples,N),polyval(B,MSamplings(@TscherbySamples,N)))
+hold on
+plot(MSamplings(@EvenSamplingPoints,N),arrayfun(func,MSamplings(@EvenSamplingPoints, N)))
 
 end
 
