@@ -7,5 +7,7 @@ for i = k
         F(i)= EOC(@RungeFunction,N_k(i),N_k(i+1));
     end
 end
-T = table(k.',E.',B.');
-L = table(k(1:11).',A.',F.');
+T = table(k.',E.',B.','VariableNames',{'k','EhN_hNk_f1','EhN_hNk_Rungefunktion'});
+L = table(k(1:11).',A.',F.','VariableNames',{'k','EOC_hNk_f1','EOC_hNk_Rungefunktion'});
+disp(T)
+disp(L)
